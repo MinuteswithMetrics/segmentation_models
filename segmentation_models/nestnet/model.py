@@ -1,4 +1,4 @@
-from .builder import build_unet
+from .builder import build_nestnet
 from ..utils import freeze_model
 from ..utils import legacy_support
 from ..backbones import get_backbone, get_feature_layers
