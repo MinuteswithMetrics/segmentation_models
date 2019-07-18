@@ -112,7 +112,7 @@ def Nestnet(backbone_name='vgg16',
                             include_top=False)
 
     if skip_connections == 'default':
-        skip_connections = DEFAULT_SKIP_CONNECTIONS[backbone_name]
+        skip_connections = DEFAULT_FEATURE_LAYERS[backbone_name]
     # n_upsample_blocks = len(skip_connections)
 
     model = build_nestnet(backbone,
